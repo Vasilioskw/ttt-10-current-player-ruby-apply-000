@@ -13,6 +13,10 @@ def turn_count(board)
  return theturn
 end
      
+
+ end
+end
+
 def current_player(board)
   #binding.pry
   if turn_count(board) % 2 == 1
@@ -21,8 +25,4 @@ def current_player(board)
    return "X" 
   elsif turn_count(board) > 9
    return nil
- end
-end
-
-
 

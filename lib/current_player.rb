@@ -15,9 +15,9 @@ end
      
 def current_player(board)
   #binding.pry
-  if turn_count(board) % 2 == 1
+  if turn_count(board).even? #turn_count(board) % 2 == 1
    return "O"
-  elsif turn_count(board) % 2 == 0
+  elsif  turn_count(board).odd? #turn_count(board) % 2 == 0
    return "X" 
   elsif turn_count(board) > 9
    return nil
